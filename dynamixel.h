@@ -38,8 +38,8 @@ void dynamixel_setrx(void);
 void dynamixel_write(uint8_t c);
 
 uint8_t dynamixel_calculatechecksum(volatile uint8_t* packet);
-uint8_t dynamixel_writepacket(volatile uint8_t* packet, uint8_t legnth);
-uint8_t dynamixel_readpacket(volatile uint8_t* packet, uint8_t legnth);
+uint8_t dynamixel_writepacket(volatile uint8_t* packet, uint8_t length);
+uint8_t dynamixel_readpacket(volatile uint8_t* packet, uint8_t length);
 uint8_t dynamixel_txrx(volatile uint8_t* txpacket, volatile uint8_t* rxpacket);
 
 uint8_t dynamixel_ping(uint8_t id);
@@ -48,7 +48,7 @@ uint8_t dynamixel_readword(uint8_t id, uint8_t address, uint16_t* value);
 uint8_t dynamixel_readtable(uint8_t id, uint8_t start_address, uint8_t end_address, uint8_t* table);
 uint8_t dynamixel_writebyte(uint8_t id, uint8_t address, uint8_t value);
 uint8_t dynamixel_writeword(uint8_t id, uint8_t address, uint16_t value);
-uint8_t dynamixel_syncwrite(uint8_t address, uint8_t legnth, uint8_t number, uint8_t* param);
+uint8_t dynamixel_syncwrite(uint8_t address, uint8_t length, uint8_t number, uint8_t* param);
 uint8_t dynamixel_reset(uint8_t id);
 
 uint16_t dynamixel_makeword(uint8_t lowbyte, uint8_t highbyte);
